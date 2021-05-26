@@ -2,7 +2,7 @@ import requests
 url = 'https://freetp.org/' # url для второй страницы
 r = requests.get(url)
 with open('test.html', 'wb') as output_file:
-  output_file.write(r.text.encode('cp1251'))
+  output_file.write(r.text.encode('UTF-16'))
 
 from bs4 import BeautifulSoup
 
